@@ -97,6 +97,8 @@ public class TeamAdapterJuanFajardo  extends  RecyclerView.Adapter<TeamAdapterJu
             Context contextItem = view.getContext();
             Intent intent = new Intent(context, DetailActivity.class);
             intent.putExtra("name", teamModelJuanFajardoList.get(getLayoutPosition()).getName());
+            intent.putExtra("code", teamModelJuanFajardoList.get(getLayoutPosition()).getName());
+            intent.putExtra("crestUrl", teamModelJuanFajardoList.get(getLayoutPosition()).getName());
             contextItem.startActivity(intent);
         }
 
